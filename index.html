@@ -1,122 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>AM Specialized Coatings | Residential & Commercial Painting Contractor</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>A&M Specialized Coatings | Commercial & Residential Painting Contractor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+    :root {
+      --teal: #0f766e;
+      --dark: #0f172a;
+      --light: #f8fafc;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1f2937;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--dark);
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-        url("https://images.unsplash.com/photo-1581092160562-40aa08e78837");
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 80px 20px;
+      padding: 90px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 44px;
       margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
 
     header p {
-      font-size: 18px;
-      max-width: 700px;
+      font-size: 20px;
+      max-width: 750px;
       margin: auto;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 25px;
-      padding: 14px 30px;
-      background: #c2410c;
+      margin-top: 30px;
+      padding: 14px 34px;
+      background: var(--teal);
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       border-radius: 4px;
     }
 
     section {
-      padding: 60px 20px;
-      max-width: 1100px;
+      padding: 70px 20px;
+      max-width: 1200px;
       margin: auto;
     }
 
     h2 {
       text-align: center;
-      font-size: 32px;
-      margin-bottom: 40px;
+      font-size: 34px;
+      margin-bottom: 50px;
     }
 
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
     }
 
-    .service-box {
-      border: 1px solid #e5e7eb;
-      padding: 25px;
+    .service {
+      background: var(--light);
+      border-left: 5px solid var(--teal);
+      padding: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
       border-radius: 6px;
-      background: #f9fafb;
-    }
-
-    .service-box h3 {
-      margin-top: 0;
-      color: #111827;
     }
 
     .about {
-      background: #111827;
+      background: var(--dark);
       color: white;
+      text-align: center;
     }
 
     .about p {
       max-width: 900px;
       margin: auto;
-      text-align: center;
       font-size: 18px;
     }
 
     .contact {
-      background: #f3f4f6;
+      background: #e5f3f2;
     }
 
     form {
-      max-width: 600px;
+      max-width: 650px;
       margin: auto;
     }
 
     input, textarea, button {
       width: 100%;
-      padding: 12px;
+      padding: 14px;
       margin-top: 12px;
       font-size: 16px;
     }
 
     button {
-      background: #111827;
+      background: var(--teal);
       color: white;
       border: none;
       cursor: pointer;
+      font-weight: 600;
     }
 
     footer {
-      background: #030712;
-      color: #9ca3af;
+      background: #020617;
+      color: #94a3b8;
       text-align: center;
-      padding: 25px;
+      padding: 30px;
       font-size: 14px;
     }
   </style>
@@ -125,44 +137,55 @@
 <body>
 
 <header>
-  <h1>AM Specialized Coatings</h1>
-  <p>Industrial, Commercial, and Protective Coating Solutions Built to Last</p>
-  <a class="btn" href="#contact">Request a Quote</a>
+  <h1>A&M Specialized Coatings</h1>
+  <p>Commercial & Residential Painting • Custom Finishes • Industrial Coatings</p>
+  <a class="btn" href="#contact">Request a Free Estimate</a>
 </header>
 
 <section>
   <h2>Our Services</h2>
   <div class="services">
-    <div class="service-box">
+    <div class="service">
+      <h3>Interior Painting</h3>
+      <p>Elegant interior painting for homes, offices, and commercial spaces with clean, lasting results.</p>
+    </div>
+    <div class="service">
+      <h3>Exterior Painting</h3>
+      <p>Durable exterior coatings that enhance curb appeal and protect your investment.</p>
+    </div>
+    <div class="service">
+      <h3>Custom Stain & Cabinet Finishes</h3>
+      <p>Premium cabinet refinishing, staining, and specialty finishes for a high-end look.</p>
+    </div>
+    <div class="service">
       <h3>Industrial Coatings</h3>
-      <p>High-performance coating systems designed to withstand harsh industrial environments.</p>
-    </div>
-    <div class="service-box">
-      <h3>Epoxy & Floor Coatings</h3>
-      <p>Durable epoxy and concrete coating systems for warehouses, shops, and facilities.</p>
-    </div>
-    <div class="service-box">
-      <h3>Corrosion Protection</h3>
-      <p>Surface prep and coatings engineered to prevent corrosion and extend asset life.</p>
-    </div>
-    <div class="service-box">
-      <h3>Commercial Applications</h3>
-      <p>Professional coatings for commercial buildings, equipment, and infrastructure.</p>
+      <p>Protective coating systems designed for performance, safety, and longevity.</p>
     </div>
   </div>
 </section>
 
+<section>
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="Elegant home exterior">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0" alt="Modern interior space">
+    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab" alt="Luxury living room">
+    <img src="https://images.unsplash.com/photo-1600585153490-76fb20a32601" alt="Exterior residential painting">
+    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea" alt="Kitchen cabinets">
+    <img src="https://images.unsplash.com/photo-1592928303524-1c2c62a6bfb7" alt="Commercial interior">
+  </div>
+</section>
+
 <section class="about">
-  <h2>Why Choose AM Specialized Coatings</h2>
+  <h2>Why Choose A&M Specialized Coatings</h2>
   <p>
-    We specialize in professional-grade coating systems that prioritize durability,
-    safety, and long-term performance. Our team delivers dependable results for industrial
-    and commercial clients who need the job done right the first time.
+    We deliver high-quality painting and coating solutions for residential and commercial clients.
+    Our team is committed to craftsmanship, professionalism, and finishes that stand the test of time.
   </p>
 </section>
 
 <section class="contact" id="contact">
-  <h2>Contact Us</h2>
+  <h2>Get a Free Estimate</h2>
   <form action="https://formspree.io/f/xyzzabcd" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
@@ -172,7 +195,7 @@
 </section>
 
 <footer>
-  <p>© 2026 AM Specialized Coatings | All Rights Reserved</p>
+  <p>© 2026 A&M Specialized Coatings | Commercial & Residential Contractor</p>
 </footer>
 
 </body>
